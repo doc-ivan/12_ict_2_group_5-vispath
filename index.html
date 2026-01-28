@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Index.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css">
+
+    <!-- Nunito Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="image/VP LOGO.png">
+
+    <title>Index</title>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="nav-list">
+            <li class="nav-item"> 
+                <a class="nav-link" data-section="login">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <span>Login</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-section="home">
+                    <i class="fa-regular fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-section="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-section="share">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>Share</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Pop-up Overlay -->
+    <div class="sign-in-sign-out-pop-up" id="sign-in-sign-out-pop-up">
+    </div>
+
+    <div class="main-content">
+        <section class="sections" id="home-section">
+            <div class="container">
+                <div class="header-display">
+                    <img src="image/VP LOGO.png" class="logo">
+                    <div class="header-display-body">
+                    </div>
+                    <!-- Carousel Indicator -->
+                    <div class="carousel-indicator">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                
+                <div class="home-body">
+                    <div class="continue-story">
+                        <h2>
+                            Continue Reading
+                        </h2>
+                        <div class="horizontal-story">
+                        </div>
+                    </div>           
+                    <div class="newest-story">
+                        <h2>
+                            Newest
+                        </h2>
+                        <div class="horizontal-story">
+                        </div>
+                    </div>
+                    <div class="popular-story">
+                        <h2>
+                            Popular
+                        </h2>
+                        <div class="horizontal-story">
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </section>
+        <section class="sections" id="search-section">
+            <div class="container search-section-wrapper">
+                <div class="header-search">
+                    <div class="search-container">
+                        <div class="search-input-wrapper">
+                            <input 
+                                type="text" 
+                                class="search-input" 
+                                placeholder="Search..."
+                                id="searchInput"
+                            >
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button class="filter-btn" data-genre="all">All</button>
+                        <button class="filter-btn" data-genre="action">Action</button>
+                        <button class="filter-btn" data-genre="adventure">Adventure</button>
+                        <button class="filter-btn" data-genre="comedy">Comedy</button>
+                        <button class="filter-btn" data-genre="drama">Drama</button>
+                        <button class="filter-btn" data-genre="horror">Horror</button>
+                        <button class="filter-btn" data-genre="mystery">Mystery</button>
+                        <button class="filter-btn" data-genre="romance">Romance</button>
+                        <button class="filter-btn" data-genre="sci-fi">Sci-Fi</button>
+                        <button class="filter-btn" data-genre="slice of life">Slice of life</button>
+                    </div>
+                </div>
+                <div class="search-body">
+                    <h2></h2>
+                    <div class="search-results">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sections" id="share-section">
+            <div class="container">
+                <div class="share-body-container">
+                    <div class="share-body">
+                        <div class="share-header">
+                            <h2>Share Your Story</h2>
+                            <p>Share your experiences, inspirations, or anything you’d like to tell us — we’d love to hear your story because it could serve as inspiration for others.</p>
+                        </div>
+
+                        <textarea 
+                            class="story-textarea" 
+                            placeholder="Share your story..."
+                            id="storyInput"
+                        ></textarea>
+
+                        <div class="character-count" id="charCount">0 word</div>
+
+                        <div class="share-footer">
+                            <button class="share-button" id="shareBtn" disabled>
+                                Share
+                            </button>
+                            <button class="clear-button" id="clearBtn">
+                                Clear
+                            </button>
+                        </div>
+
+                        <div class="success-message" id="successMsg">
+                            ✓ Thank you! Your story has been successfully shared.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="clicked-story-container" id="clicked-story-container">
+        </div>
+        
+        <div class="reading-place" id="reading-place">
+        </div>
+
+    </div>
+
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
