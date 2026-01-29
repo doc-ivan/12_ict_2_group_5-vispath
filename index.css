@@ -672,6 +672,7 @@
             object-fit: cover;
             display: block;
             margin-bottom: 0.25rem;
+            cursor: pointer;
         }
 
         .horizontal-story h3 {
@@ -1693,4 +1694,5 @@
             .info-header p {
                 font-size: 12px;
             }
+
         }
