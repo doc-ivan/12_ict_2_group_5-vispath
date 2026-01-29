@@ -905,6 +905,7 @@
             object-fit: cover;
             display: block;
             margin-bottom: 0.25rem;
+            cursor: pointer;
         }
 
         .search-results h3 {
@@ -1696,3 +1697,4 @@
             }
 
         }
+
