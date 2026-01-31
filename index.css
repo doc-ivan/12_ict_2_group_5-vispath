@@ -24,6 +24,7 @@
             padding: 0;
             box-sizing: border-box;
             user-select: none;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -1696,4 +1697,5 @@
             .info-header p {
                 font-size: 12px;
             }
+
         }
