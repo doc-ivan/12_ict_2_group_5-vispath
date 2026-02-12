@@ -1443,6 +1443,7 @@
             color: #333333;
             margin: 30px 0;
             text-align: justify;
+            white-space: pre-wrap;
         }
 
         /* ===== OPTIONS BUTTONS ===== */
@@ -1699,3 +1700,4 @@
             }
 
         }
+
