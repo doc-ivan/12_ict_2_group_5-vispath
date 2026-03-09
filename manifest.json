@@ -1,7 +1,7 @@
 {
   "name": "VisPath",
   "short_name": "VisPath",
-  "start_url": "/12_ict_2_group_5-vispath/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
@@ -14,3 +14,4 @@
   ]
 
 }
+
